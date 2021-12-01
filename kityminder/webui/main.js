@@ -20,7 +20,13 @@ angular
         } else {
           window.vscode.postMessage({
             command: 'draft',
-            exportData: JSON.stringify(window.minder.exportJson(), null, 4),
+            exportData: JSON.stringify(window.minder.exportJson(), (key, val)=>{
+                const filter_keys = ["id", "created"]
+                if (filter_keys.includes(key)) {
+                    return undefined
+                }
+                return val
+            }, "\t"),
           });
         }
       });

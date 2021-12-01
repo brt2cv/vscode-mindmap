@@ -5,14 +5,15 @@
     select="setCurTab('idea')"
   >
     <undo-redo editor="editor"></undo-redo>
-    <append-node minder="minder"></append-node>
     <arrange minder="minder"></arrange>
-    <operation minder="minder"></operation>
+    <progress-editor minder="minder"></progress-editor>
     <hyper-link minder="minder"></hyper-link>
     <image-btn minder="minder"></image-btn>
     <note-btn minder="minder"></note-btn>
     <priority-editor minder="minder"></priority-editor>
-    <progress-editor minder="minder"></progress-editor>
+    <font-operator minder="minder" class="inline-directive"></font-operator>
+    <operation minder="minder"></operation>
+    <append-node minder="minder"></append-node>
     <resource-editor minder="minder"></resource-editor>
   </tab>
   <tab
@@ -24,7 +25,6 @@
     <theme-list minder="minder"></theme-list>
     <layout minder="minder" class="inline-directive"></layout>
     <style-operator minder="minder" class="inline-directive"></style-operator>
-    <font-operator minder="minder" class="inline-directive"></font-operator>
   </tab>
   <tab
     heading="{{ 'view' | lang: 'ui/tabs'; }}"

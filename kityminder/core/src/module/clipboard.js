@@ -9,7 +9,7 @@ define(function(require, exports, module) {
         var km = this,
             _clipboardNodes = [],
             _selectedNodes = [];
-        
+
         function appendChildNode(parent, child) {
             _selectedNodes.push(child);
             km.appendNode(child, parent);
@@ -41,7 +41,7 @@ define(function(require, exports, module) {
             _clipboardNodes = nodes.map(function(node) {
                 return node.clone();
             });
-        } 
+        }
 
         /**
          * @command Copy
@@ -132,7 +132,7 @@ define(function(require, exports, module) {
                 this.fire('beforeCopy', e);
             }
 
-            var Cut = function (e) {    
+            var Cut = function (e) {
                 this.fire('beforeCut', e);
             }
 
@@ -161,7 +161,7 @@ define(function(require, exports, module) {
                     'paste': PasteCommand
                 },
                 'commandShortcutKeys': {
-                    'copy': 'normal::ctrl+c|',
+                    'copy': 'normal::ctrl+c',
                     'cut': 'normal::ctrl+x',
                     'paste': 'normal::ctrl+v'
                 },
