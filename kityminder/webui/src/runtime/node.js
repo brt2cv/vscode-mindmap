@@ -55,7 +55,7 @@ define(function(require, exports, module) {
     main.button({
       position: 'bottom',
       label: '导入节点',
-      key: 'Alt + V',
+      // key: 'Alt + V',
       enable: function() {
         var selectedNodes = minder.getSelectedNodes();
         return selectedNodes.length == 1;
@@ -67,7 +67,7 @@ define(function(require, exports, module) {
     main.button({
       position: 'bottom',
       label: '导出节点',
-      key: 'Alt + C',
+      // key: 'Alt + C',
       enable: function() {
         var selectedNodes = minder.getSelectedNodes();
         return selectedNodes.length == 1;
