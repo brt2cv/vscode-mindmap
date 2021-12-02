@@ -24,6 +24,8 @@ angular
                 const filter_keys = ["id", "created"]
                 if (filter_keys.includes(key)) {
                     return undefined
+                } else if ((key === "children") && (val.length === 0)) {
+                    return undefined
                 }
                 return val
             }, 0),
