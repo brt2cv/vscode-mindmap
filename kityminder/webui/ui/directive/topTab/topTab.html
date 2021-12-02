@@ -10,11 +10,8 @@
     <hyper-link minder="minder"></hyper-link>
     <image-btn minder="minder"></image-btn>
     <note-btn minder="minder"></note-btn>
-    <priority-editor minder="minder"></priority-editor>
+    <style-operator minder="minder" class="inline-directive"></style-operator>
     <font-operator minder="minder" class="inline-directive"></font-operator>
-    <operation minder="minder"></operation>
-    <append-node minder="minder"></append-node>
-    <resource-editor minder="minder"></resource-editor>
   </tab>
   <tab
     heading="{{ 'appearence' | lang: 'ui/tabs'; }}"
@@ -24,15 +21,18 @@
     <template-list minder="minder" class="inline-directive"></template-list>
     <theme-list minder="minder"></theme-list>
     <layout minder="minder" class="inline-directive"></layout>
-    <style-operator minder="minder" class="inline-directive"></style-operator>
-  </tab>
+</tab>
   <tab
     heading="{{ 'view' | lang: 'ui/tabs'; }}"
     ng-click="toggleTopTab('view')"
     select="setCurTab('view')"
   >
+    <append-node minder="minder"></append-node>
+    <operation minder="minder"></operation>
     <expand-level minder="minder"></expand-level>
     <select-all minder="minder"></select-all>
     <search-btn minder="minder"></search-btn>
+    <priority-editor minder="minder"></priority-editor>
+    <resource-editor minder="minder"></resource-editor>
   </tab>
 </tabset>

@@ -3,7 +3,7 @@
     "displayName": "vscode-kitymind",
     "icon": "resources/icon.png",
     "description": "mindmap for vscode",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "publisher": "brt2",
     "repository": {
         "type": "git",

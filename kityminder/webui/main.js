@@ -26,7 +26,7 @@ angular
                     return undefined
                 }
                 return val
-            }, "\t"),
+            }, 0),
           });
         }
       });
